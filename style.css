@@ -1,67 +1,202 @@
-
-.heading {
-background-color: darkblue;
-font-size: larger;
-text-align: center;
-font-family: serif;
-color: aliceblue;
+#loginbt {
+    display: inline-flex;
+    float: right;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 16px;
+    background-color: none;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    background-color: white;
 }
-   img {
-    height: 200px;
-    width: 300px;
-    align-self: right;
-   }
-   
-.para1 {
-    text-align: justify;
-    background-color:darkgrey;
-    font-family: sans-serif;
-    font-size: small;
-    height: 400px;
-    width: 400px;
-    padding: 20px;
+#loginbt:hover{
+    background-color:#5b0f0f;
+    color: white;
+}
+.login .topnav {
+    display: inline-block;
+}
+.topbar{
+    text-align: center;
+    background-size: cover;
+    padding: 5px;
+}
+.main{
+    height:100vh;
+    width:100%;  
+    display:flex;
+    text-align:left;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    height: 600px;
+    padding-left: 50px;
+    padding-top: 150px;
+  }
+  .icon1 .icon2 .icon3 .icon4{
+    display: inline-block;
+    height: 100px;
+    width: 75px;
+
+  }
+#roll{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 4rem;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
     position: relative;
-    top: 0px;
-   }
-   .para2 {
-    position: relative;
-    top: 0%;
-    background-color:gray;
-    text-align: justify;
-    font-family: sans-serif;
-    font-size: small;
-    height: 400px;
-    width: 210px;
-    padding: 20px;
-   }
-  .para3{
-    background-color:darkgrey;
-    text-align: justify;
-    font-family: sans-serif;
-    font-size: small;
-    height: 400px;
-    width: 700px;
-    position: relative;
-    top: 0px;
-    padding: 20px;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-  } 
-.para4 {
-  background-color: cornflowerblue;
-  font-size: medium;
-  font-family: monospace;
-  margin-right: 500px;
-  align-items: justify;
-  position: relative;
-  height: 350px;
-  width: 500px;
-
+    color: #1D3557;
+  }
+  
+  
+  #spare-time{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+    
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #spare-time {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }
+.disp{
+    width: 350px;
+    height: 500px;
+    background-image: url(gif.gif);
+    background-size: contain;
+    background-position: center;
+    margin: 100px;
+    margin-bottom: 0;
+    margin-top: 50px;
 }
-.para1, .para2, .para3 {
-  display: inline-block;
+.disp, .description {
+    display: inline-block;
+    flex: stretch;
 }
-body{
-  padding: 30px;
+.description{
+    width: 50%;
+    color: black;
+    text-align: justify;
+    align-items: first baseline;
+    font-size: 17px;
+    line-height: 150%;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: black;
+  }
+li {
+    float: left;
+  }
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: #5b0f0f;
+    color: white;
+  }
 
-
+.program1, .program2, .program3, .program4 {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 30px;
+}
+img{
+    height: 125px;
+    width: 300px;
+}
+.program1:hover{
+    transform: scale(1.2) ;
+}
+.program2:hover{
+    transform: scale(1.2)  ;
+}
+.program3:hover{
+    transform: scale(1.2);
+}
+.program4:hover{
+    transform: scale(1.2) ;
+}
+#graphiti {
+  height: 100px;
+  background-image: url(grap.jpg);
+  background-size: contain;
+  width:100%
+}
